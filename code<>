@@ -1,0 +1,12 @@
+import random
+
+huruf = "abcdefghijklmnopqrstuvwxyz"
+huruf_besar = "ABCDFGHIJKLMONOPQRSTUVWXYZ"
+angka = "123456789"
+karakter = "!@#$%^&*"
+
+semua = angka + huruf_besar + huruf + karakter
+
+password = ''.join (random.sample(semua,8))
+
+print ("ini password kamu {password}")
